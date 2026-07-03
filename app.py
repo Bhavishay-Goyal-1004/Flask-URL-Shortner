@@ -5,6 +5,7 @@ import random
 import string
 
 app = Flask(__name__)
+app.config["JSONIFY_PRETTYPRINT_REGULAR"] = True
 
 DATA_FILE = "data.json"
 
