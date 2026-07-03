@@ -55,6 +55,7 @@ def shorten_url():
 
     original_url = request.form.get("url")
 
+    data = load_data()
 
     if not original_url or original_url.strip() == "":
         return render_template(
@@ -69,9 +70,17 @@ def shorten_url():
             error="URL must start with http:// or https://",
             short_url=None
         )
+    else:
+        for code, details in data.items():
+            url = details["url"]
+            if original_url == url:
+                return render_template(
+                "index.html",
+                error="URL already Shortened! Check Dashboard",
+                short_url=None
+            )
 
 
-    data = load_data()
 
     short_code = generate_short_code()
 
