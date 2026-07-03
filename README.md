@@ -14,8 +14,11 @@ This project allows users to convert long URLs into short and shareable links wi
 * Shorten long URLs instantly
 * Fast URL redirection
 * Clean and responsive user interface
-* Lightweight Flask backend
+* Generate unique 6-character short codes
+* Dashboard to view all shortened URLs
 * JSON-based data storage
+* Track click counts
+* URL validation
 * Railway deployment support
 * Simple and beginner-friendly project structure
 
@@ -128,6 +131,26 @@ http://flask-url-shortner-production.up.railway.app/s/TfJ8zF
 ### Dashboard Page
 
 <img width="1920" height="911" alt="{FF93AE2B-E2B6-4F95-A68B-85E3EA2906EE}" src="https://github.com/user-attachments/assets/abc5d97e-677d-44f2-a919-d89d3335b06c" />
+
+---
+## 🔌 API
+
+Retrieve all stored links:
+
+```
+/api/links
+```
+
+Example response:
+
+```json
+{
+    "TfJ8zF": {
+        "url": "https://google.com",
+        "clicks": 1
+    }
+}
+```
 
 ---
 
