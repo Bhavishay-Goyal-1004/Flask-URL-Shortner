@@ -1,7 +1,9 @@
 # Flask URL Shortner
+![Python](https://img.shields.io/badge/Python-3.x-blue)
+![Flask](https://img.shields.io/badge/Flask-Web_App-black)
+![Deployment](https://img.shields.io/badge/Deployment-Railway-purple)
 
-A fast and lightweight URL shortening web application built using Flask.
-This project allows users to convert long URLs into short and shareable links with seamless redirection.
+A modern Flask-based URL shortener web application that converts long URLs into short, shareable links with real-time click tracking and dashboard analytics.
 
 ## Live Demo
 
@@ -11,16 +13,16 @@ This project allows users to convert long URLs into short and shareable links wi
 
 ## Features
 
-* Shorten long URLs instantly
-* Fast URL redirection
-* Clean and responsive user interface
-* Generate unique 6-character short codes
-* Dashboard to view all shortened URLs
-* JSON-based data storage
-* Track click counts
-* URL validation
-* Railway deployment support
-* Simple and beginner-friendly project structure
+- Shorten long URLs instantly
+- Generate unique short links
+- Fast redirection system
+- Click tracking support
+- Responsive modern UI
+- Dashboard to manage links
+- REST API endpoint
+- URL validation handling
+- JSON-based lightweight storage
+- Railway cloud deployment
 
 ---
 
@@ -61,7 +63,7 @@ Flask-URL-Shortner/
 Clone the repository:
 
 ```bash
-git clone https://github.com/your-username/Flask-URL-Shortner.git
+git clone https://github.com/Bhavishay-Goyal-1004/Flask-URL-Shortner.git
 cd Flask-URL-Shortner
 ```
 
@@ -117,7 +119,7 @@ https://www.google.com
 ### Shortened URL
 
 ```text
-http://flask-url-shortner-production.up.railway.app/s/TfJ8zF
+https://flask-url-shortner-production.up.railway.app/s/YVapoV
 ```
 
 ---
@@ -126,17 +128,16 @@ http://flask-url-shortner-production.up.railway.app/s/TfJ8zF
 
 ### Home Page
 
-<img width="1920" height="910" alt="{68330A9D-1719-4F78-ABF7-F23D0B09B975}" src="https://github.com/user-attachments/assets/3aa015d1-3307-4f2e-a829-2d2f58ddf672" />
+<img width="1918" height="1031" alt="{6F93C71A-A68A-4D2B-8FA5-B52BA8C25426}" src="https://github.com/user-attachments/assets/724022e2-58cc-436b-87a0-9bea066cefa7" />
 
 ### Dashboard Page
 
-<img width="1920" height="911" alt="{FF93AE2B-E2B6-4F95-A68B-85E3EA2906EE}" src="https://github.com/user-attachments/assets/abc5d97e-677d-44f2-a919-d89d3335b06c" />
+<img width="1920" height="1031" alt="{2F8D8EB5-3640-4FC7-99C7-2774CCCABEC9}" src="https://github.com/user-attachments/assets/e6cd8f44-fd32-49d0-a067-792860bd1b05" />
 
 ---
 ## 🔌 API
 
 Retrieve all stored links:
-
 ```
 /api/links
 ```
@@ -145,10 +146,14 @@ Example response:
 
 ```json
 {
-    "TfJ8zF": {
-        "url": "https://google.com",
-        "clicks": 1
-    }
+  "Na6UTf": {
+    "clicks": 1,
+    "url": "https://www.youtube.com"
+  },
+  "YVapoV": {
+    "clicks": 0,
+    "url": "https://www.google.com"
+  }
 }
 ```
 
