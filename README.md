@@ -7,7 +7,7 @@ A modern Flask-based URL shortener web application that converts long URLs into 
 
 ## Live Demo
 
-[Visit Live Website](https://flask-url-shortner-production.up.railway.app/)
+[Visit Live Website](https://shortify-url-shortner.up.railway.app/)
 
 ---
 
@@ -119,7 +119,7 @@ https://www.google.com
 ### Shortened URL
 
 ```text
-https://flask-url-shortner-production.up.railway.app/s/YVapoV
+https://shortify-url-shortner.up.railway.app/s/8TCSnz
 ```
 
 ---
@@ -128,11 +128,11 @@ https://flask-url-shortner-production.up.railway.app/s/YVapoV
 
 ### Home Page
 
-<img width="1918" height="1031" alt="{6F93C71A-A68A-4D2B-8FA5-B52BA8C25426}" src="https://github.com/user-attachments/assets/724022e2-58cc-436b-87a0-9bea066cefa7" />
+<img width="1913" height="968" alt="{37F20E05-87C4-4240-9459-82DF55FD7995}" src="https://github.com/user-attachments/assets/50198dfb-36fb-4520-b6b9-9391746b2d8f" />
 
 ### Dashboard Page
 
-<img width="1920" height="1031" alt="{2F8D8EB5-3640-4FC7-99C7-2774CCCABEC9}" src="https://github.com/user-attachments/assets/e6cd8f44-fd32-49d0-a067-792860bd1b05" />
+<img width="1920" height="970" alt="{0490E3F2-97CB-4794-9A6B-8E38DB36BBE1}" src="https://github.com/user-attachments/assets/35b9deef-6725-4e85-85ef-6d00f34d81cc" />
 
 ---
 ## 🔌 API
@@ -146,13 +146,17 @@ Example response:
 
 ```json
 {
-  "Na6UTf": {
+  "2dYOCS": {
+    "clicks": 0,
+    "url": "https://www.dtu.ac.in"
+  },
+  "8TCSnz": {
+    "clicks": 3,
+    "url": "https://www.google.com"
+  },
+  "vHg2cg": {
     "clicks": 1,
     "url": "https://www.youtube.com"
-  },
-  "YVapoV": {
-    "clicks": 0,
-    "url": "https://www.google.com"
   }
 }
 ```
