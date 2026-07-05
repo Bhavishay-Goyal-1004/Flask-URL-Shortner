@@ -111,7 +111,8 @@ def redirect_to_original(code):
     if code not in data:
         return render_template(
             "404.html",
-            code=code
+            title="Link not found",
+            message="The short URL you are trying to access does not exist or may have been removed."
         ), 404
 
 
@@ -145,6 +146,14 @@ def api_links():
 
     return jsonify(data)
 
+@app.errorhandler(404)
+def page_not_found(error):
+
+    return render_template(
+        "404.html",
+        title="Page not found",
+        message="The page you are looking for does not exist."
+    ), 404
 
 if __name__ == "__main__":
 
